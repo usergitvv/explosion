@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    background-image: url("img/pocgamer-grenade.png");
+}
+
+/* output of counter */
+.container {    
+    margin: 50px auto;
+    border: 3px solid black;
+    background-color: rgba(43, 64, 102, 0.9);
+    width: 600px;
+    height: 300px;
+    padding-top: 122px;
+    box-sizing: border-box;
+
+    border-radius: 10px;
+    outline: 4px solid red;
+    outline-offset: 3px;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Button */
+button {
+    background-color: green;
+    border: 5px outset grey;
+    width: auto;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+
+    font-size: x-large;
+    font-weight: 600;
+    font-style: oblique;
+
+    transition: background-color .2s linear;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(21, 255, 0);
+}
+
+button:active {
+    border: 5px inset grey;
+}
+
+/* .image(fixed) */
+.image {
+    position: fixed;
+    background-image: url("img/dogs.jpg");
+    width: 960px;
+    height: 640px;
+    left: calc(50% - 480px);
+    top: 40px;
+    z-index: -2;
+    opacity: 0;
+}
+
+/* Media */
+
+@media screen and (max-width: 768px) {
+    .image {
+        background-image: url("img/dogs-small.jpg");
+        width: 740px;
+        height: 493px;
+        left: calc(50% - 370px);
+        top: 165px;
+    }
+
+    .container {
+        width: 400px;
+        height: 300px;
+        padding-top: 125px;
+        margin-top: 200px;
+    }
+
+    button {
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image {
+        background-image: url("img/dogs-small(480).jpg");
+        width: 470px;
+        height: 313px;
+        left: calc(50% - 235px);
+        top: calc(50% - 156.5px);
+    }
+
+    .container {
+        width: 200px;
+        height: 150px;
+        padding-top: 50px;
+        margin-top: 75%;
+        margin-bottom: 5px;
+        border-color: red;
+        outline: 0;
+    }
+
+    button {
+        margin: 0 auto;
+        font-size: large;
+        font-weight: 400;
+        font-style: oblique;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .image {
+        background-image: url("img/dogs-small(320).jpg");
+        width: 320px;
+        height: 213px;
+        left: calc(50% - 160px);
+        top: calc(50% - 106.5px);
+    }
+
+    .container {
+        width: 200px;
+        height: 150px;
+        padding-top: 50px;
+        margin-top: 80%;
+        margin-bottom: 5px;
+        border-color: red;
+        outline: 0;
+    }
+
+    button {
+        margin: 0 auto;
+        font-size: medium;
+        font-weight: normal;
+        font-style: oblique;
+        height: 50px;
+        padding: 0;
+    }
+}
